@@ -3,6 +3,10 @@ package com.oreilly.testingscala
 import org.specs2.mutable._
 import org.joda.time.Period
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class JukeboxUnitSpec extends Specification {
   "A Jukebox" should {
     """have a play method that returns a copy of the jukebox that selects

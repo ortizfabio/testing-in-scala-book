@@ -1,8 +1,10 @@
 package com.oreilly.testingscala
-
 import org.specs2.Specification
 import org.specs2.matcher.DataTables
 
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class AlbumAgeDataTableSpecification extends Specification with DataTables {def is =
   "Trying out a table of values for testing purposes to determine the age of albums".title ^
   """The first column is the album name, the second is a band name,

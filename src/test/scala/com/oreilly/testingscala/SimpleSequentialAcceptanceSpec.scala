@@ -2,6 +2,10 @@ package com.oreilly.testingscala
 
 import org.specs2.Specification
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class SimpleSequentialAcceptanceSpec extends Specification { def is =
     args(sequential = true)               ^
   "This is a simple specification"      ^

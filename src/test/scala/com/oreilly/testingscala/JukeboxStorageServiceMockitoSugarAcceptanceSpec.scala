@@ -3,6 +3,10 @@ package com.oreilly.testingscala
 import org.specs2.Specification
 import org.specs2.mock.Mockito
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class JukeboxStorageServiceMockitoSugarAcceptanceSpec extends Specification with Mockito {
   def is = {
     "You can use Mockito to perform Scala mocking" ! useMockitoToMockClasses

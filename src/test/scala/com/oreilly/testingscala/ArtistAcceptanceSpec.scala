@@ -2,6 +2,10 @@ package com.oreilly.testingscala
 
 import org.specs2.Specification
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class ArtistAcceptanceSpec extends Specification { def is =
     "An artist should have a middle at construction"                                                         ^ t(3) ^
       """An artist should be able to be constructed with a Option[String] middle name and

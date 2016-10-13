@@ -12,6 +12,10 @@ import org.specs2.execute.Result
  *
  */
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class ArtistSharedFixturesAcceptanceSpecification extends Specification { def is =
   "Using the same shared instance of Barry White add some albums"                    ^ br ^
   "Then send some questions about the test"                                          ^

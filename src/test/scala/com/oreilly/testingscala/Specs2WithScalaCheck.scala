@@ -6,6 +6,10 @@ import org.scalacheck.Prop._
 import com.oreilly.testingscala.AlbumGen._
 import org.scalacheck.{Arbitrary, Gen, Prop}
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class Specs2WithScalaCheck extends Specification with ScalaCheck {
 
   "Using Specs2 With ScalaCheck".title ^

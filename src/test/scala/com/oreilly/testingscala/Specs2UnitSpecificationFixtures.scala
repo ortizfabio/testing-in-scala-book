@@ -5,6 +5,10 @@ import org.specs2.specification.Scope
 import org.specs2.execute.Result
 
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class Specs2UnitSpecificationFixtures extends Specification {
   "Add an album to a shared list" in new ListMaker {
     lst.append(new Album("Prokofiev and Rachmaninoff: Cello Sonatas", 1991, new Artist("Yo", "Yo", "Ma")))
@@ -21,6 +25,10 @@ class Specs2UnitSpecificationFixtures extends Specification {
   }
 }
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class Specs2UnitSpecificationWithAfter extends Specification {
   "Add an album to a shared list" in new ListMaker {
     lst.append(new Album("Prokofiev and Rachmaninoff: Cello Sonatas", 1991, new Artist("Yo", "Yo", "Ma")))

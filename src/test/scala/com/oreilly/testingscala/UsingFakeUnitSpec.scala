@@ -14,6 +14,10 @@ class FakeDAO extends DAO {
   def persistCount = map.size
 }
 
+
+import org.junit.runner.RunWith
+import org.specs2.runner.JUnitRunner
+@RunWith(classOf[JUnitRunner])
 class UsingFakeUnitSpec extends Specification {
   "When two albums are added to the fake DAO the albums should be stored" in {
     val dao = new DAOStub
