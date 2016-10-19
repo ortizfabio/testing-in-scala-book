@@ -1,0 +1,32 @@
+import sbt._
+import Keys._
+import ScalaMockPlugin._
+ 
+object TestingScala extends Build {
+ 
+  override lazy val settings = super.settings ++ Seq(
+    organization := "com.oreilly.testingscala",
+    version := "1.0",
+    scalaVersion := "2.10.4",
+ 
+    resolvers += ScalaToolsSnapshots,
+    resolvers ++= Seq("snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+                     "releases"  at "http://oss.sonatype.org/content/repositories/releases"),
+    libraryDependencies ++= Seq("org.scalatest" %% "scalatest" % "2.2.4" % "test",
+                                "joda-time" % "joda-time" % "1.6.2",
+                                "junit" % "junit" % "4.10",
+                                "org.testng" % "testng" % "6.1.1" % "test",
+                                "org.specs2" %% "specs2" % "2.5" % "test",
+                                "org.easymock" % "easymock" % "3.1" % "test",
+                                "org.mockito" % "mockito-core" % "1.9.0" % "test",
+                                "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
+//                                "org.scalaz.stream" %% "scalaz-stream" % "0.8.3.a" % "test",
+                                "org.scalamock" %% "scalamock-scalatest-support" % "3.2.2"),
+
+    autoCompilerPlugins := true,
+    scalacOptions ++= Seq("-deprecation", "-unchecked")
+//    addCompilerPlugin("org.scalamock" %% "scalamock-compiler-plugin" % "2.4")
+)
+ 
+  lazy val myproject = Project("testing", file(".")) settings(generateMocksSettings: _*) configs(Mock)
+}

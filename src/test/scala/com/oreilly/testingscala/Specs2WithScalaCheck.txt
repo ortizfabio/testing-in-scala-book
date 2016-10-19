@@ -3,7 +3,6 @@ package com.oreilly.testingscala
 import org.specs2.ScalaCheck
 import org.specs2.mutable.Specification
 import org.scalacheck.Prop._
-import com.oreilly.testingscala.AlbumGen._
 import org.scalacheck.{Arbitrary, Gen, Prop}
 
 

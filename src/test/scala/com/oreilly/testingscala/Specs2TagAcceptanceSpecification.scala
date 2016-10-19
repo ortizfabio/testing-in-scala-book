@@ -1,14 +1,14 @@
 package com.oreilly.testingscala
 
 import org.specs2.Specification
-import org.specs2.specification.Tags
+
 import org.joda.time.Period
 
 
 import org.junit.runner.RunWith
 import org.specs2.runner.JUnitRunner
 @RunWith(classOf[JUnitRunner])
-class Specs2TagAcceptanceSpecification extends Specification with Tags {
+class Specs2TagAcceptanceSpecification extends Specification  {
   def is =
     "The total time of an album is based on the sum of the tracks".title ^
       "When an album is given three tracks" ! testThreeTracks ^ tag("timeLength", "threeTracks") ^

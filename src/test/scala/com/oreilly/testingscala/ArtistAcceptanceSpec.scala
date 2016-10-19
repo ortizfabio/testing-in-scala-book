@@ -15,7 +15,7 @@ class ArtistAcceptanceSpec extends Specification { def is =
          given a first and last name at construction time""" ! testFullNameWithFirstAndLast                  ^
       """An artist should be able to have a full name of the first, middle and last name
            given a first, middle, and last name at construction time""" ! testFullNameWithFirstMiddleAndLast ^
-                                                                                                             endp^
+                                                                                                             p^
     "An artist should have an alias"                                                                         ^
       """method called withAlias(String) that returns a copy of Artist with an alias""" ! testAlias
 
