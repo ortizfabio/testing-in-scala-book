@@ -1,6 +1,7 @@
 package examples
 
 import org.specs2._
+import org.specs2.specification.core.Fragment
 
 /**
  * This is another way to write the StackSpec, this time using auto-examples and
@@ -33,9 +34,9 @@ class StackIsolatedSpec extends Specification {
                                                                       """
 
   /** stacks creation */
-  def stackIsEmpty  = step(stack = emptyStack)
-  def stackIsNormal = step(stack = normalStack)
-  def stackIsFull   = step(stack = fullStack)
+  def stackIsEmpty:Fragment  = step(stack = emptyStack)
+  def stackIsNormal:Fragment = step(stack = normalStack)
+  def stackIsFull:Fragment   = step(stack = fullStack)
 
   def emptyStack  = SizedStack(maxCapacity = 10, size = 0)
   def normalStack = SizedStack(maxCapacity = 10, size = 2)

@@ -93,6 +93,11 @@
             <artifactId>specs2-gwt_2.11</artifactId>
             <version>3.8.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.typelevel</groupId>
+            <artifactId>cats-core_2.11</artifactId>
+            <version>0.7.2</version>
+        </dependency>
     </dependencies>
     <properties>
         <maven-surefire-report-plugin-version>2.19.1</maven-surefire-report-plugin-version>
