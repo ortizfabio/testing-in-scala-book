@@ -1,9 +1,10 @@
-import org.scalacheck.Properties
-import org.scalacheck.Prop
-import org.scalacheck.Gen.{listOf, alphaStr, numChar}
+package examples.scalacheck
+
+import org.scalacheck.Gen.{alphaStr, listOf, numChar}
+import org.scalacheck.{Prop, Properties}
 
 object StringUtilsProps extends
-  Properties("StringUtils") {
+  Properties("examples.scalacheck.StringUtils") {
   property("truncate1") =
     Prop.forAll { (s: String, n: Int) =>
       lazy val t = StringUtils.truncate(s, n)
@@ -41,4 +42,8 @@ object StringUtilsProps extends
     (s1: String, s2: String, s3: String) =>
       StringUtils.contains(s1 + s2 + s3, s2)
   }
+}
+
+object TestStringUtils extends App {
+  StringUtilsProps.check()
 }

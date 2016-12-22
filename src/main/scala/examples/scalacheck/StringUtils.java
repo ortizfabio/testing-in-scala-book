@@ -1,3 +1,5 @@
+package examples.scalacheck;
+
 import java.util.StringTokenizer;
 
 public class StringUtils {
