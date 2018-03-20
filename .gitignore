@@ -3,3 +3,4 @@ test-output/
 .idea_modules/
 .history
 .idea/
+*.iml
