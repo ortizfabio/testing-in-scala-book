@@ -1,0 +1,133 @@
+abavia
+abavus
+abdormitus
+abdormivit
+ab hoc mense
+unus
+duo, duae
+tres
+tres, tria
+quattuor
+quinque
+sex
+septem
+octo
+novem
+decem
+undecim
+duodecim
+tredecim
+quattuordecim
+quindecim
+sedecim
+septemdecim
+odeviginti
+undeviginti
+viginti
+viginti unus
+viginti duo
+viginti tres
+viginti quattuor
+viginti quinque
+viginti sex
+viginti septem
+viginti octo
+viginti novem
+triginta
+quadraginta
+quinquaginta
+sexaginta
+septuaginta
+octoginta
+nonaginta
+centum
+centum unus
+centum quinquaginta
+ducenti
+trecenti
+quadringenti
+quingenti
+sescenti
+septigenti
+octingenti
+nongenti
+mille
+primus
+secundus
+tertius
+quartus
+quintus
+sextus
+septimus
+octavus
+nonus
+decimus
+undecimus
+duodecimus
+tertius decimus
+quartus decimus
+quintus decimus
+sextus decimus
+septimus decimus
+duodevicesimus
+undevicesimus
+vicesimus or vigesimus
+vicesimus primus
+vicesimus secundus
+vicesimus tertius
+vicesimus quartus
+vicesimus quintus
+vicesimus sextus
+vicesimus septimus
+vicesimus octavus
+vicesimus nonus
+tricesimus
+quadragesimus
+quinquagesimus
+sexagesimus
+septuagesimus
+octogesimus
+nonagesimus
+centesimus
+centesimus primus
+centesimus quinquagesimus
+ducentesimus
+trecentesimus
+quadringentesimus
+quingentesimus
+sescentesimus
+septingentesimus
+octingentesimus
+nongentesimus
+millesimus
+anno domini
+anno incarnationis
+annus bissextus
+ante meridiem
+altera die
+biduum
+cras
+die sequenti
+die vero
+ejusdem die
+eodem anno
+eodem die
+eodem mense
+eo tempore
+hodie
+longo tempore
+mane
+meridie
+nocte
+nudius tertius
+nunc dies tertius
+nunc temporis
+perendie
+pomerid
+post meridiem
+postridie
+pridie
+pro tempore
+triduum
+tunc temporis
+vespere

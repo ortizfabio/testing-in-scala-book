@@ -85,7 +85,7 @@ object TwoArbitraryImplictAlternateSolution {
     // both value arbitraryFoo in object UsingGenerators of type => org.scalacheck.Arbitrary[examples.scalacheck.UsingGenerators.Foo]
     // and value arbitraryFooDouble in object UsingGenerators of type => org.scalacheck.Arbitrary[examples.scalacheck.UsingGenerators.Foo]
     // match expected type org.scalacheck.Arbitrary[examples.scalacheck.UsingGenerators.Foo]
-    forAll { _: Foo => (true == true) }
+//    forAll { _: Foo => (true == true) }
     val arbitraryFooDouble: Arbitrary[Foo] = Arbitrary(fooGenDouble)
     val f2 = ( _: Foo) => (true == true)
      //The original and right way would be to have (_) => this
